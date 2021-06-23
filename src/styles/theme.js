@@ -9,6 +9,8 @@ export const lightTheme = {
   scrollBar: 'rgba(0, 0, 0, 0.5)',
   boxShadow: 'rgba(0, 0, 0, 0.16)',
   boxShadowHover: 'rgba(0, 0, 0, 0.32)',
+  toggleBorder: '#fff',
+  gradient: 'linear-gradient(#39598A, #79D7ED)',
 };
 
 export const darkTheme = {
@@ -22,4 +24,6 @@ export const darkTheme = {
   scrollBar: 'rgba(255, 255, 255, 0.5)',
   boxShadow: 'rgba(0, 0, 0, 0.16)',
   boxShadowHover: 'rgba(0, 0, 0, 0.32)',
+  toggleBorder: '#6B8096',
+  gradient: 'linear-gradient(#091236, #1E215D)',
 };

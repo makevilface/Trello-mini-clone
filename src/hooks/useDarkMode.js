@@ -1,43 +1,29 @@
 import React from 'react';
 
-import Context from '../context';
-
 const useDarkMode = () => {
-  const { state, setState } = React.useContext(Context);
+  const [theme, setTheme] = React.useState('light');
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      window.localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme('light');
+      window.localStorage.setItem('theme', 'light');
+    }
+  };
 
   React.useEffect(() => {
-    const darkSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const localTheme = window.localStorage.getItem('theme');
 
-    const toggleTheme = (event) => {
-      if (event.matches) {
-        setState({ ...state, darkMode: true });
-      } else {
-        setState({ ...state, darkMode: false });
-      }
-    };
-
-    if (darkSchemeQuery.matches) {
-      setState({ ...state, darkMode: true });
-    }
-
-    if (darkSchemeQuery.addEventListener) {
-      darkSchemeQuery.addEventListener('change', toggleTheme);
-      return () => {
-        darkSchemeQuery.removeEventListener('change', toggleTheme);
-      };
+    if (localTheme) {
+      setTheme(localTheme);
     } else {
-      // backwards compatibility
-      // https://betterprogramming.pub/using-window-matchmedia-in-react-8116eada2588
-      darkSchemeQuery.addListener(toggleTheme);
-      return () => {
-        darkSchemeQuery.removeListener(toggleTheme);
-      };
+      window.localStorage.setItem('theme', 'light');
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return state.darkMode;
+  return [theme, toggleTheme];
 };
 
 export default useDarkMode;

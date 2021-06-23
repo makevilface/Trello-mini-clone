@@ -15,15 +15,15 @@ const StyledLayoutWrapper = styled.div`
 `;
 
 const Layout = ({ children }) => {
-  const isDarkModeEnabled = useDarkMode();
-  const theme = isDarkModeEnabled ? darkTheme : lightTheme;
+  const [theme, toggleTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
     <StyledLayoutWrapper>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeMode}>
         <GlobalStyles />
-        <Header></Header>
-        {/* Board */}
+        <Header theme={theme} toggleTheme={toggleTheme}></Header>
+        {children}
       </ThemeProvider>
     </StyledLayoutWrapper>
   );
