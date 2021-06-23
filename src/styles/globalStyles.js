@@ -86,8 +86,8 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: ${({ theme }) => theme.colors.background};
-        color: ${({ theme }) => theme.colors.text};
+        background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.text};
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 400;
@@ -107,14 +107,14 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         font-size: 2rem;
         line-height: 2.375rem;
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.primary};
     }
 
     h2 {
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.primary};
         
     }
 
@@ -122,7 +122,7 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         font-size: 1.75rem;
         line-height: 2.25rem;
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.primary};
         margin-bottom: 3rem;
     }
 
@@ -135,7 +135,7 @@ const GlobalStyle = createGlobalStyle`
     hr {
         margin: 3rem auto;
         border-width: .05rem;
-        color: ${({ theme }) => theme.colors.tertiary};
+        color: ${({ theme }) => theme.tertiary};
         opacity: 0.1;
       }
     }

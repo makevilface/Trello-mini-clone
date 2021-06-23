@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Layout from './Layout';
+
 import GlobalStateProvider from '../context/provider';
 
 const App = () => {
@@ -7,7 +9,11 @@ const App = () => {
     darkMode: false,
   };
 
-  return <GlobalStateProvider initialState={globalState}></GlobalStateProvider>;
+  return (
+    <GlobalStateProvider initialState={globalState}>
+      <Layout>Here will be all content</Layout>
+    </GlobalStateProvider>
+  );
 };
 
 export default App;
