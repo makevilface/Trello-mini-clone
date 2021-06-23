@@ -1,4 +1,5 @@
 import React from 'react';
+import { setLocalStorage, getLocalStorage } from '../utils/localStorage';
 
 const useDarkMode = () => {
   const [theme, setTheme] = React.useState('light');

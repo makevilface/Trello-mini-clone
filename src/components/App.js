@@ -2,8 +2,14 @@ import React from 'react';
 
 import Layout from './Layout';
 
+import Board from './Board';
+
 const App = () => {
-  return <Layout>Here will be all content</Layout>;
+  return (
+    <Layout>
+      <Board />
+    </Layout>
+  );
 };
 
 export default App;
