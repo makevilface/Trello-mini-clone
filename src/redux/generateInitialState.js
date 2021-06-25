@@ -50,6 +50,14 @@ const generateInitialState = (store) => {
       cardText: 'Вторая карточка',
     },
   });
+  store.dispatch({
+    type: 'ADD_CARD',
+    payload: {
+      listId: secondListId,
+      cardId: shortID.generate(),
+      cardText: 'И ещё одна карточка',
+    },
+  });
 };
 
 export default generateInitialState;

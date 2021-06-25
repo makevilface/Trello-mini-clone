@@ -24,8 +24,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `;
 
-const StyledTitle = styled.h1``;
-
 const Header = ({ theme, toggleTheme }) => {
   return (
     <StyledHeader>

@@ -1,13 +1,12 @@
 import React from 'react';
-
 import styled, { ThemeProvider } from 'styled-components';
 
-import { lightTheme, darkTheme } from '../styles/theme';
+import { useDarkMode } from '../hooks';
 
 import Header from './Header';
 
-import { useDarkMode } from '../hooks';
 import GlobalStyles from '../styles/globalStyles';
+import { lightTheme, darkTheme } from '../styles/theme';
 
 const StyledLayoutWrapper = styled.div`
   width: 100%;

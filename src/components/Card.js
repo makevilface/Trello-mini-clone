@@ -4,7 +4,6 @@ import { Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 
 import CardEditor from './CardEditor';
-
 import StyledEditIcon from '../styles/icons/editIcon';
 
 const StyledCard = styled.div`

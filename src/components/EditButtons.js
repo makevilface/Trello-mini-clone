@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import StyledButton from '../styles/button';
-
 import StyledClearIcon from '../styles/icons/clearIcon';
 
 const StyledEditButtons = styled.div`
