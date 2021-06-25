@@ -1,8 +1,8 @@
 ## 🥥 Trello mini clone
 
-## 🥝 Live
+## 🥝 Live Link
 
-soon
+- `Project` https://react-trello-mini-test.herokuapp.com/
 
 ---
 
