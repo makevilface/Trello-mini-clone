@@ -1,4 +1,4 @@
-# 🥥 Trello mini clone
+## 🥥 Trello mini clone
 
 ## 🥝 Live
 
@@ -6,7 +6,7 @@ soon
 
 ---
 
-## 🐶 Available Scripts and Commands
+## 🍍 Available Scripts and Commands
 
 ```bash
 yarn                     # install dependencies
