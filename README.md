@@ -2,7 +2,7 @@
 
 ## 🥝 Live Link
 
-- `Project` https://react-trello-mini-test.herokuapp.com/
+- `Project` https://trello-mini-clone.vercel.app/
 
 ---
 
