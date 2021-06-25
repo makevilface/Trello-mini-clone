@@ -90,7 +90,8 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.text};
         font-size: 1rem;
         line-height: 1.5rem;
-        font-weight: 400;
+        font-weight: 300;
+        font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
         text-rendering: optimizeLegibility;
      
     a {
@@ -104,17 +105,15 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-weight: 700;
-        font-size: 2rem;
+        font-weight: 900;
+        font-size: 2.375rem;
         line-height: 2.375rem;
-        color: ${({ theme }) => theme.primary};
     }
 
     h2 {
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
-        color: ${({ theme }) => theme.primary};
         
     }
 
@@ -122,23 +121,9 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         font-size: 1.75rem;
         line-height: 2.25rem;
-        color: ${({ theme }) => theme.primary};
         margin-bottom: 3rem;
     }
-
-    h4 {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        font-weight: 400;
-    }
-
-    hr {
-        margin: 3rem auto;
-        border-width: .05rem;
-        color: ${({ theme }) => theme.tertiary};
-        opacity: 0.1;
-      }
-    }
+  }
 `;
 
 export default GlobalStyle;

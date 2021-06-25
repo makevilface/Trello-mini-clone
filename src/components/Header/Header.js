@@ -19,12 +19,18 @@ const StyledContentWrapper = styled(ContentWrapper)`
     justify-content: space-between;
     align-items: center;
   }
+  h1 {
+    margin: 0 auto;
+  }
 `;
+
+const StyledTitle = styled.h1``;
+
 const Header = ({ theme, toggleTheme }) => {
   return (
     <StyledHeader>
       <StyledContentWrapper>
-        <h1>Its a {theme === 'light' ? 'light theme' : 'dark theme'}! </h1>
+        <h1>Mini Trello clone 🥥</h1>
         <ToggleThemeButton theme={theme} toggleTheme={toggleTheme} />
       </StyledContentWrapper>
     </StyledHeader>
